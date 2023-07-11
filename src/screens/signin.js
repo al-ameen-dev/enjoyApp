@@ -8,7 +8,7 @@ import { SIGNINUP_THEME_COLOR } from "../constants";
 export default function Signin({navigation}){
 
     const regex = /^\d{10}$/;
-    const [phoneNumber,setPhoneNumber] = useState();
+    const [phoneNumber,setPhoneNumber] = useState("");
     const [password,setPassword] = useState();
     const [errorMsgPhone,setErrorMsgPhone] = useState(null);
     const [phoneColor,setPhoneColor] = useState(SIGNINUP_THEME_COLOR);

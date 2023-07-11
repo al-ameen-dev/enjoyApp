@@ -5,12 +5,14 @@ import About from "../screens/about";
 import Profile from "../screens/profile";
 import Signin from "../screens/signin";
 import Signup from "../screens/signup";
+import MyTabs from "./TabNavigation";
 
 const Stack = createStackNavigator();
 
 export default function MainNavigator(){
     return(
         <Stack.Navigator>
+            <Stack.Screen name="tab" component={MyTabs} options={{headerShown:false}}/>
             <Stack.Screen name="signin" component={Signin} options={{headerShown:false}} />
             <Stack.Screen name="signup" component={Signup} options={{headerShown:false}} />
             <Stack.Screen name="home" component={Home} options={{headerShown:false}} />

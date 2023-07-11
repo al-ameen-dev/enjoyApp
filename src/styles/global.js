@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { BACKGROUND_COLOR } from "../constants";
 
 
 
@@ -11,6 +12,8 @@ export const globalStyles = StyleSheet.create({
     container:{
         paddingHorizontal:10,
         paddingVertical:28,
+        backgroundColor:BACKGROUND_COLOR,
+        flex:1,
     },
     title:{
         //fontFamily:'roboto-bold'
