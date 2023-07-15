@@ -4,7 +4,6 @@ import Home from '../screens/home';
 import About from '../screens/about';
 import SIGNINUP_THEME_COLOR from "../constants";
 import { MaterialCommunityIcons,Feather } from '@expo/vector-icons';
-import Boy from "../../assets/boy.svg";
 
 
 const Tab = createBottomTabNavigator();

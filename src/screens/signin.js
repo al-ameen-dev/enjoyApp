@@ -73,7 +73,7 @@ export default function Signin({navigation}){
 
 const styles = StyleSheet.create({
     loginContainer:{
-        marginTop:10,
+        marginTop:0,
         flex:1,
         backgroundColor:'#fff',
         padding:5,
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
         borderRadius:7,
     },
     title:{
-        marginVertical:30,
+        marginVertical:20,
         fontSize:25,
         textAlign:"center",
         fontWeight:"bold",

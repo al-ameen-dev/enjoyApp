@@ -1,7 +1,8 @@
-import React,{ useCallback} from 'react';
+import React,{ useCallback, useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import AppNavigation from './src/navigations/AppNavigations';
 
@@ -30,6 +31,12 @@ export default function App() {
   // {
   //   return null;
   // }
+  const [firstLaunch,setFirstLaunch] = useState
+    useEffect(() => {
+        const getFirstTime = async () =>{
+        }
+        getFirstTime();
+    }, [])
   return(
       <> 
         <StatusBar style="dark" backgroundColor="#fff"/>

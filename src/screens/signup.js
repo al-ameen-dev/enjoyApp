@@ -1,5 +1,7 @@
 import React,{ useState, useEffect } from "react";
-import { View, StyleSheet, Text, TouchableOpacity,TouchableWithoutFeedback,Keyboard,TextInput, KeyboardAvoidingView} from "react-native";
+import { View, StyleSheet, Text,
+     TouchableOpacity,TouchableWithoutFeedback,Keyboard,
+     TextInput, KeyboardAvoidingView, ScrollView} from "react-native";
 import { MaterialIcons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import Signupsvg from "../../assets/Signup.svg";
@@ -112,7 +114,7 @@ export default function Signup({navigation}){
 
 const styles = StyleSheet.create({
     loginContainer:{
-        marginTop:10,
+        marginTop:0,
         flex:1,
         backgroundColor:'#fff',
         padding:5,
@@ -164,7 +166,7 @@ const styles = StyleSheet.create({
         borderRadius:7,
     },
     title:{
-        marginVertical:30,
+        marginVertical:5,
         fontSize:25,
         textAlign:"center",
         fontWeight:"bold",
